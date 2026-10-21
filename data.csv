@@ -1,0 +1,204 @@
+Date,Customer,sales order id (if applicable),Contact,Staus(New or Returning),"Customer Category(Installers, end users, corporate, online )",Invoice_Number,Item,Part Number,Quantity,Rate,REMARK,Total
+1/9/2026,Mr Edaafe,,,EXISTING,End User,11701,solar standing fan,,1,54500,,54500
+1/12/2026,Mr Briggs,,8033041220,NEW,End User,11702,solar standing fan,,1,55000,,55000
+1/14/2026,Christiana Olagunji,,,NEW,End User,11703,solar standing fan,,1,55000,,55000
+1/15/2026,Ikechukwu Opara,,8037026047,EXISTING,End User,11704,itel 6kw/48v hybride inverter,,1,710000,,710000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,itel 10kwh lithium battery,,1,1840000,,1840000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,jinko 610w solar panel,,8,135000,,1080000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,ac box populated,,1,95000,,95000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,dc box populated,,1,95000,,95000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,solar mounting rails and accessories,,1,100000,,100000
+1/15/2026,Ikechukwu Opara,,,EXISTING,End User,11704,installation chaarge,,1,100000,,100000
+1/16/2026,Ogochukwu,,,EXISTING,Installer,11705,tbb 1kva /12v inverter,,1,140000,,140000
+1/22/2026,Mr Edafe,,,EXISTING,End User,11706,call out for inverter repairs,,1,15000,,15000
+1/23/2026,Ikechukwu Opara,,,EXISTING,End User,11707,6mm dc cable,,50,3500,,175000
+1/23/2026,Ikechukwu Opara,,,EXISTING,End User,11707,6mm ac cable,,50,2500,,125000
+1/23/2026,Ikechukwu Opara,,,EXISTING,End User,11707,50mmm dc cable,,3,8000,,24000
+1/25/2026,Innocent Owobu,,,EXISTING,Installer,11708,9ja solar lamb,,3,55000,,165000
+1/25/2026,Innocent Owobu,,,EXISTING,Installer,11708,solar standing fan,,1,55000,,55000
+1/24/2026,Miss Nkiru,,,NEW,End User,11709,solar standing fan,,1,55000,,55000
+1/26/2026,Nenda Mark,,,NEW,End User,11711,solar standing fan,,2,55000,,110000
+3/2/2026,Mrs Vera,,,NEW,End User,11713,solar standing fan,,2,55000,,110000
+3/2/2026,Mrs Vera,,,NEW,End User,11713,discount,,1,2000,,2000
+2/6/2026,Steve,,,NEW,End User,11714,solar standing fan,,1,55000,,55000
+2/9/2026,Mr Unchenna,,,NEW,End User,11715,tubular distilled water,,5,1000,,5000
+2/9/2026,Abasiama Faith,,,NEW,End User,11716,tubular distilled water,,10,10000,,100000
+2/9/2026,Mr Acho,,,EXISTING,End User,11717,cmontmax 500w streetlight,,1,41000,,41000
+2/11/2026,Ikechukwu Ekeji,,,EXISTING,End User,11718,himel 20a 2p ac breaker,,1,5500,,5500
+2/11/2026,Ikechukwu Ekeji,,,EXISTING,End User,11718,himel 40ka 2p ac surge,,1,30000,,30000
+2/11/2026,Ikechukwu Ekeji,,,EXISTING,End User,11718,25mm cable lug,,10,6000,,60000
+2/11/2026,Ikechukwu Ekeji,,,EXISTING,Installer,11718,zenvo 63a bypass breaker,,1,12000,,12000
+2/11/2026,Mrs Afolabi,,,EXISTING,End User,11719,tubular distilled water,,10,15000,,150000
+2/16/2026,Mudasir Afolabi,,,EXISTING,End User,11720,lithium valley 5.12kwh,,1,925000,,925000
+2/16/2026,Mudasir Afolabi,,,EXISTING,End User,11720,discount,,1,35000,,35000
+2/18/2026,Clement,,,EXISTING,End User,11721,single mc4 connector,,5,1500,,7500
+2/20/2026,Mr Obiodu,,8080130664,EXISTING,End User,11722,9ja solar lamb,,1,55000,,55000
+2/23/2026,Clement,,,EXISTING,End User,11723,single mc4 connector,,16,1500,,24000
+2/23/2026,Mr Emeka Total,,,EXISTING,End User,11724,repairs of himel 30kva stabilizer,,1,40000,,40000
+2/26/2026,Ugochukwu,,,EXISTING,Installer,11725,logistic charge for inverter repaired,,1,15000,,15000
+2/27/2026,Divine Solar Engineering,,,NEW,Partner,11726,2ways mc4 connector,,2,5500,,11000
+2/28/2026,Sunday Ike,,,NEW,End User,11727,tubular distilled water,,25,25000,,625000
+3/6/2026,Mr Chima,,,NEW,End User,11729,single mc4 connector,,5,1500,,7500
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,70mm dc cable,,3,17000,,51000
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,single mc4 connector,,3,1500,,4500
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,95mm cable lug,,4,1200,,4800
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,himel 12 ways enclosure box,,2,16400,,32800
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,himel ac surge,,1,29000,,29000
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,himel 2p 25a dc breaker,,3,11500,,34500
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,beaver 2p dc surge,,1,30000,,30000
+3/11/2026,Ikechukwu Ekeji,,,NEW,Installer,11730,himel125a 2p ac breaker,,1,19850,,19850
+3/11/2026,Ikechukwu Ekeji,,,EXISTING,Installer,11730,himel 63a 2p ac breaker,,1,7000,,7000
+3/11/2026,Jsk Pharmacy,,,EXISTING,Partner,11731,tubular distilled water,,17,17000,,289000
+3/11/2026,Mr Rafael,,,NEW,End User,11732,solar standing fan,,2,55000,,110000
+3/12/2026,Allwell,,,NEW,End User,11733,solar standing fan,,1,55000,,55000
+3/17/2026,Maryan,,,NEW,End User,11734,jinko 485w solar panel,,1,120000,,120000
+3/18/2026,Mr Kingsley,,,NEW,End User,11735,repaired of 2kva beaver inverter,,1,15000,,15000
+3/21/2026,Ikechukwu,,,NEW,Installer,11736,himel ac surge,,1,30000,,30000
+3/21/2026,Ikechukwu,,,EXISTING,Installer,11736,70mm cable lug,,4,1500,,6000
+3/24/2026,Mr Patrick,,,NEW,End User,11737,cmontmax solar floodlight 500w,,1,56700,,56700
+3/24/2026,Ikechukwu,,,EXISTING,Installer,11738,himel ac surge,,1,30000,,30000
+3/25/2026,Mr Nathaniel,,8055141389,EXISTING,Installer,11739,diagnosis fee for inverter check,,1,10000,,10000
+4/1/2026,Prince,,,NEW,End User,11740,25mm dc cable,,2,8500,,17000
+4/2/2026,Luminar Classic Solution,,,EXISTING,Installer,11741,blacl panther solar standing fan,,4,55000,,220000
+4/1/2026,Mr Onome,,,EXISTING,End User,11742,longi 655w solar panel,,8,150000,,1200000
+4/1/2026,Prince,,,NEW,End User,11743,beaver 48v-15ah battery charger,,1,55000,,55000
+4/1/2026,Prince,,7036192588,NEW,End User,11744,himel 40a 2p dc breaker,,1,12000,,12000
+4/1/2026,Prince,,,NEW,End User,11744,homayapro charge controller,,1,190000,,190000
+4/1/2026,Mr George Nwachukwu,,,EXISTING,End User,11745,longi 655w solar panel,,30,150000,,4500000
+4/2/2026,Joshua,,,EXISTING,End User,11746,solar mounting raiils,,1,75000,,75000
+4/2/2026,Joshua,,,EXISTING,End User,11746,mid clamps,,6,1200,,7200
+4/2/2026,Joshua,,,EXISTING,End User,11746,end clamps,,4,1200,,4800
+4/2/2026,Joshua,,,NEW,End User,11746,l-foot,,2,2300,,4600
+4/2/2026,Luminant Classic Solution,,8035064919,EXISTING,Installer,11747,blacl panther solar standing fan,,4,55000,,220000
+4/13/2026,Luminant Classic Solution,,8035064919,EXISTING,Installer,11748,blacl panther solar standing fan,,2,55000,,110000
+4/13/2026,Dumle Stephen,,,EXISTING,Installer,11749,solar home lightening,,1,53000,,53000
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,25mm cable lug,,8,900,,7200
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,himel 40a 2p dc breaker,,2,12000,,24000
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,himel25a 2p ac breaker,,1,5500,,5500
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,himel 10a 2p ac breaker,,1,5500,,5500
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,zenvo 63a 2p bypass breaker,,1,15000,,15000
+4/9/2026,Ikechukwu,,,EXISTING,Installer,11749,25mm dc cable single core,,3,8000,,24000
+4/9/2026,Ikechukwu,,,EXISTING,Installer,12151,unicorn charge controller 80a,,1,70000,,70000
+4/10/2026,Ikechukwu,,,EXISTING,Installer,12152,himel13a socket,,1,1900,,1900
+4/10/2026,Emeka Total,,,EXISTING,End User,12153,schneider conext 2425 inverfter repair,,1,85000,,85000
+4/10/2026,Favourite Renewable,,,EXISTING,Partner,12154,longi 655w solar panel,,2,145000,,290000
+4/10/2026,Favourite Renewable,,,EXISTING,Partner,12154,jinko 530w bifacial solar panel,,12,127000,,1524000
+4/10/2026,Obi Joseph,,,NEW,End User,12155,unicorn 180w slaor panel,,2,60000,,120000
+4/1/2026,Mr Obiodu,,,NEW,End User,12157,schneider 65ka 2p surge arrestor,,1,195000,,195000
+4/1/2026,Mr Obiodu,,,NEW,End User,12157,10mm ac cable,,3,2450,,7350
+4/1/2026,Mr Obiodu,,,NEW,End User,12157,himel 4 ways enclosure box,,1,5000,,5000
+4/1/2026,Mr Obiodu,,,EXISTING,End User,12157,service charge,,1,30000,,30000
+4/11/2026,Mr Andrew,,,EXISTING,End User,12158,himel 125a 2p ac breaker,,1,20000,,20000
+4/11/2026,Mr Emmanuel,,,NEW,End User,12159,longi 655w solar panel,,14,155000,,2170000
+4/15/2026,Mr Onome,,,EXISTING,End User,12160,jinko 485w solar panel,,2,120000,,240000
+4/15/2026,Pastor Festus,,,NEW,End User,12161,delmar 220ah-12v tubular battery,,1,260000,,260000
+4/14/2026,Favourite Renewable,,,EXISTING,Partner,12163,jinko 530w solar panels,,8,127000,,1016000
+4/15/2026,Mr Precious,,,NEW,End User,12164,blacl panther solar standing fan,,1,55000,,55000
+4/17/2026,Luminar Classic Solution,,,NEW,Installer,12166,himel 32a 2p ac breaker,,5,5500,,27500
+4/17/2026,Luminar Classic Solution,,,NEW,Installer,12166,himel 40a2p ac breaker,,9,5500,,49500
+4/17/2026,Luminar Classic Solution,,,EXISTING,Installer,12166,himel 63a 2p ac breaker,,10,5500,,55000
+4/17/2026,Alhaji Akeem,,,EXISTING,End User,12167,blacl panther solar standing fan,,3,47000,,141000
+4/2/2026,Graceonly,,,EXISTING,Partner,12169,schneider 250a battery fuse,,1,170000,,170000
+4/2/2026,Graceonly,,,EXISTING,Partner,12169,less prevous 125a 2p dc breaker,,1,48000,,48000
+4/20/2026,Andrew Gabriel,,,NEW,End User,12170,himel 30kva stabilizer,,1,1120000,,1120000
+4/21/2026,Uchechukwu Umunna,,,NEW,End User,12171,blacl panther solar standing fan,,1,55000,,55000
+4/21/2026,Jsk Pharmacy,,,EXISTING,Partner,12172,tubular distilled water,,5,8000,,40000
+4/21/2026,Namdi,,,EXISTING,End User,121173,unicorn solar chargecontroller 80a,,1,70000,,70000
+4/21/2026,Namdi,,,EXISTING,End User,121173,longi 655w solar panel,,2,155000,,310000
+4/21/2026,Namdi,,,EXISTING,End User,121173,6mm dc cable,,20,2500,,50000
+4/21/2026,Namdi,,,EXISTING,End User,121173,himel 16a 2p dc breaker,,1,15000,,15000
+4/21/2026,Namdi,,,EXISTING,End User,121173,rails and accessoies(local),,1,30000,,30000
+4/21/2026,Namdi,,,EXISTING,End User,121173,service charge,,1,75000,,75000
+4/21/2026,Namdi,,,NEW,End User,121173,himel 12ways enclosure box,,1,16000,,16000
+4/22/2026,Nnamdi,,,NEW,End User,12175,leaf 300w solar panel,,2,80000,,160000
+4/22/2026,Nnamdi,,,NEW,End User,12175,6mm dc cable,,18,2500,,45000
+4/22/2026,Nnamdi,,,NEW,End User,12175,local rails and accessories,,1,30000,,30000
+4/22/2026,Nnamdi,,,NEW,End User,12175,himel 12ways enclosure box,,1,16000,,16000
+4/22/2026,Nnamdi,,,NEW,End User,12175,chneider xantress 40a charge controller,,1,89000,,89000
+4/22/2026,Nnamdi,,,NEW,End User,12175,tubular distilled water,,15,1500,,22500
+4/22/2026,Nnamdi,,,NEW,End User,12175,laqbour charge,,1,70000,,70000
+4/22/2026,Nnamdi,,,NEW,End User,12175,blacl panther solar standing fan,,1,55000,,55000
+4/22/2026,Nnamdi,,,NEW,End User,12175,himel 25a dc breaker,,1,15000,,15000
+4/22/2026,Nnamdi,,,NEW,End User,12175,cmontmax floodlight 300w,,1,56000,,56000
+4/28/2026,Arthur,,,NEW,End User,12176,longi 655w solar panel,,2,172920,,345840
+4/28/2026,Arthur,,,NEW,End User,12176,"rails,pv cable",,1,45000,,45000
+4/28/2026,Arthur,,,EXISTING,End User,12176,labour charge/transportation,,1,20000,,20000
+5/2/2026,Luminar Classic Solution,,,EXISTING,Partner,12179,zenvo 63a 2p bypass breaker,,3,13000,,39000
+5/2/2026,Mr George Nwachukwu,,,EXISTING,End User,12180,longi 655w solar panel,,20,155000,,3100000
+5/7/2026,Tech Tric,,,NEW,Partner,12181,lithium valley 5kva-24v lithium battery,,1,890000,,890000
+5/9/2026,Mr Clement,,,EXISTING,End User,12182,single way mc4 connector,,8,1800,,14400
+5/11/2026,Zenitech Engineering,,,NEW,Partner,12183,longi 655w solar panel,,15,155000,,2325000
+4/28/2026,Mr Arthur,,,NEW,End User,12184,victor 4.2kw inverter,,1,480000,,480000
+4/28/2026,Mr Arthur,,,NEW,End User,12184,"input/output,enclosure,bypass and rack",,1,215100,,215100
+4/28/2026,Mr Arthur,,,NEW,End User,12184,"lithium valley 2.5.6v,5kw battery",,1,815000,,815000
+4/28/2026,Mr Arthur,,,NEW,End User,12184,longi 655w solar panel,,5,140000,,700000
+4/28/2026,Mr Arthur,,,NEW,End User,12184,"solar installation breaker,roof rack,dc  etc",,1,510000,,510000
+4/28/2026,Mr Arthur,,,EXISTING,End User,12184,labour charge,,1,145000,,145000
+5/11/2026,Mr Emmanuel,,,NEW,End User,12186,black panther standing fan,,1,60000,,60000
+5/12/2026,Wisdom Paul,,,NEW,End User,12187,deye 12kw inverter,,1,2700000,,2700000
+5/14/2026,Ikechukwu,,,EXISTING,Installer,12188,tubular distilled water,,10,1000,,10000
+5/16/2026,Mr Friday,,,NEW,End User,12189,himel125a 2p dc breaker,,1,24500,,24500
+5/23/2026,Mr Andrew,,,NEW,End User,12190,himel 20kva stabilizer,,1,875000,,875000
+5/23/2026,Mr Andrew,,,NEW,End User,12190,himel 4ways enclosure box,,1,5000,,5000
+5/29/2026,Tech Tric,,,NEW,Partner,12191,himel 32a 2p ac breaker,,6,5500,,33000
+5/29/2026,Tech Tric,,,NEW,Partner,12191,himel 63a 2p ac breaker,,6,5500,,33000
+6/3/2026,Samuel,,,NEW,End User,12192,black panther solar standing fan,,1,55000,,55000
+6/5/2026,Mr Abiye,,,EXISTING,End User,12193,tubular distilled water,,8,1500,,12000
+6/8/2026,Ovie,,,NEW,End User,12194,amaron quanta battery 200ah-12v,,2,385000,,770000
+6/15/2026,Mrs Peace,,,NEW,End User,12195,black panther solar standing fan,,1,60000,,60000
+6/16/2026,General Musa,,,EXISTING,End User,12197,service charge for relocation of solar panel,,1,70000,,70000
+6/16/2026,Centrix Solar,,,EXISTING,Partner,12198,single mc4 connector,,25,1800,,45000
+6/22/2026,Mr George.N,,,EXISTING,End User,12200,deye 12kw inverter,,1,2950000,,2950000
+6/22/2026,Alhaji Yekini,,,EXISTING,End User,12351,inverter swap (beaver 2.5kva),,1,127500,,127500
+6/22/2026,Alhaji Yekini,,,EXISTING,End User,12351,tubular distilled water,,10,15000,,150000
+6/22/2026,Alhaji Yekini,,,EXISTING,End User,12351,himel 63a 2p dc breaker,,1,12000,,12000
+6/22/2026,Alhaji Yekini,,,EXISTING,End User,12351,service charge,,1,20000,,20000
+6/27/2026,Nsika,,,NEW,End User,12354,solar power system 4bulb,,1,55000,,55000
+6/27/2026,Nsika,,,NEW,End User,12355,l-foot,,10,2500,,25000
+6/30/2026,Krian Frank Venture,,,NEW,End User,12356,4.2m rails and accessories,,3,93000,,279000
+6/30/2026,Clement,,,NEW,Installer,12357,himel 63a 2p dc breaker,,1,12000,,12000
+7/3/2026,Ndufrike,,,NEW,End User,12358,must 3.2kva inverter repairs,,1,20000,,20000
+7/3/2026,Mr Arthur,,,NEW,End User,12359,schneider rccb ac 2p 25a 3000ma acti9,,1,135000,,135000
+7/3/2026,Mr Arthur,,,NEW,End User,12359,inverter swap ,,1,130000,,130000
+7/3/2026,Mr Arthur,,,NEW,End User,12359,"cables,6mm local rails,dc flex 6mm",,5,3500,,17500
+7/3/2026,Mr Arthur,,,EXISTING,End User,12359,logistic ,,1,50000,,50000
+6/10/2026,Ntyeche .M,,8037280207,EXISTING,End User,12360,deye multi split dc/ac air conditioner,,1,2793000,,2793000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,deye 12kw inverter,,1,2800000,,2800000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,deye 10kwh lithium battery,,1,2360000,,2360000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,longi 655w solar panel,,10,155000,,1550000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,ac box populated,,1,100000,,100000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,combiner box,,2,50000,,100000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,battery dc cable 5omm,,4,10500,,42000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,dc cable 6mm,,80,3000,,240000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,dc populated,,1,150000,,150000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,250a battery breaker,,1,100000,,100000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,ac cable 6mm,,20,2500,,50000
+6/10/2026,Ntyeche .M,,,EXISTING,End User,12360,installation chaarge,,1,300000,,300000
+7/14/2026,Mr Acho,,,EXISTING,End User,12362,cmontmax 40w solar streetlight,,4,47000,,188000
+7/14/2026,Mr Acho,,,EXISTING,End User,12362,cmontmax 500w streetlight,,2,52000,,104000
+7/17/2026,Godwin,,,NEW,End User,12364,himel 10kva stabilizer wall mount,,1,320000,,320000
+7/18/2026,Chukwu Ngozi,,7030274760,NEW,End User,12365,black panther solar standing fan,,1,60000,,60000
+7/18/2026,Jiadele,,,NEW,End User,12366,blaclk panther solar standing fan,,1,60000,,60000
+7/20/2026,Luminar Solution,,,NEW,Installer,12367,himel 25a 2p ac breaker,,10,5400,,54000
+7/20/2026,Luminar Solution,,,NEW,Installer,12367,himel 40a 2p ac breaker,,6,5400,,32400
+7/20/2026,Luminar Solution,,,NEW,Installer,12367,himel 10a 2p ac breaker,,4,5400,,21600
+7/20/2026,Luminar Solution,,,NEW,Installer,12367,himel 6a 2p ac breaker,,5,5400,,27000
+7/20/2026,Luminar Solution,,,EXISTING,Installer,12367,himel 16a 2p ac breaker,,5,5400,,27000
+7/23/2026,Kingsley,,8038687909,EXISTING,End User,12368,amaron quanta battery 200ah-12v,,2,380000,,760000
+7/23/2026,Kingsley,,,NEW,End User,12368,black panther solar standing fan,,1,60000,,60000
+7/30/2026,Emmmanuel,,9013398623,NEW,End User,12369,himel 40ka 2p ac surge,,1,30000,,30000
+8/18/2026,Mr Nonso,,8034722019,EXISTING,End User,12379,schneider conext 4548 inverter,,1,1700000,,1700000
+8/20/2026,Nyeche,,8037280207,EXISTING,End User,12380,schneider 12ways 3p db(full),,1,298150,,298150
+8/20/2026,Nyeche,,,EXISTING,End User,12380,black panther outdoor camera,`,1,84690,,84690
+8/20/2026,Nyeche,,,EXISTING,End User,12380,black panther outdoor camera sd12,,2,76800,,153600
+8/21/2026,Mr Lukeman,,,EXISTING,End User,12370,tubular distilled water,,4,1500,,6000
+8/27/2026,Techtric Nig Ltd,,8037902776,EXISTING,Partner,12371,himel 32a 2pac breaker,,6,5450,,32700
+8/27/2026,Techtric Nig Ltd,,,EXISTING,Partner,12371,himel 63a 2p ac breaker,,2,6390,,12780
+8/31/2026,Mega Business Ideas,,8037178519,NEW,Partner,12373,25mm dc cable,,1.5,4500,,6750
+8/31/2026,Mega Business Ideas,,,NEW,Partner,12373,25mm cable lugs,,4,900,,3600
+9/3/2026,Victor,,9076329787,NEW,End User,12374,himel 15a socket,,1,2400,,2400
+9/9/2026,Trust Eze,,8032932174,NEW,End User,12381,c-torch 7w bulb,,5,700,,3500
+10/9/2026,Engr West,,8160737634,NEW,Installer,12377,himel 32a 2p dc breaker,,2,12000,,24000
+10/9/2026,Engr West,,,NEW,Installer,12377,himel 40a 2p ac breaker,,1,9000,,9000
+10/9/2026,Engr West,,,NEW,Installer,12377,himel 32a contactor,,1,10000,,10000
+10/9/2026,Engr West,,,NEW,Installer,12377,beaver 63a 2p ac breaker,,1,7000,,7000
