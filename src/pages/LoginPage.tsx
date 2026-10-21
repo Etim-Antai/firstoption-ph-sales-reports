@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sun, Lock, Mail, ArrowRight } from 'lucide-react';
+import { Lock, Mail, ArrowRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export const LoginPage: React.FC = () => {
@@ -40,9 +40,16 @@ export const LoginPage: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 bg-[#10243A] selection:bg-[#0D9488] selection:text-white">
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-7 sm:p-9 border border-slate-100 animate-fadeIn">
         {/* Brand identity header */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#0D9488] to-[#14B8A6] shadow-md shadow-[#0D9488]/30">
-            <Sun className="w-6 h-6 text-white" />
+        <div className="flex items-center gap-3.5">
+          <div className="w-12 h-12 rounded-2xl overflow-hidden bg-[#10243A] border border-slate-100 flex items-center justify-center shadow-md">
+            <img
+              src="./firstoption_logo.jpg"
+              alt="FirstOption Solar"
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src = './firstoptionsolar.jpg';
+              }}
+            />
           </div>
           <div>
             <div className="text-xl font-extrabold tracking-tight text-[#10243A]">

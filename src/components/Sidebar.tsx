@@ -7,7 +7,6 @@ import {
   FileSpreadsheet,
   Shield,
   LogOut,
-  Sun,
   X,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -55,8 +54,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {/* Logo and Brand Header */}
         <div className="flex items-center justify-between p-5 border-b border-[#1c3550]">
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#0D9488] to-[#14B8A6] shadow-md shadow-[#0D9488]/30">
-              <Sun className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#0e1e30] border border-[#234568] flex items-center justify-center shadow-md">
+              <img
+                src="./firstoption_logo.jpg"
+                alt="FirstOption Solar"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = './firstoptionsolar.jpg';
+                }}
+              />
             </div>
             <div>
               <div className="text-base font-extrabold tracking-tight text-white flex items-center gap-1.5">

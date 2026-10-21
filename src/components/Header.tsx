@@ -73,10 +73,17 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onOpenMobile }) => 
 
         {/* User avatar circle */}
         <div
-          className="flex items-center justify-center w-9 h-9 rounded-full bg-[#10243A] text-white font-bold text-xs shadow-sm ring-2 ring-slate-100"
+          className="flex items-center justify-center w-9 h-9 rounded-full bg-[#10243A] text-white font-bold text-xs shadow-sm ring-2 ring-slate-100 overflow-hidden"
           title={`${user?.name} (${user?.role})`}
         >
-          {initials}
+          <img
+            src="./firstoption_logo.jpg"
+            alt={initials}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              (e.currentTarget as HTMLElement).style.display = 'none';
+            }}
+          />
         </div>
       </div>
     </header>
