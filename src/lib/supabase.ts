@@ -1,3 +1,4 @@
+
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { SaleRecord } from '../types';
 import { INITIAL_SALES_DATA } from '../data/initialData';
@@ -19,14 +20,20 @@ export const supabase: SupabaseClient | null = isSupabaseConfigured
 const LOCAL_STORAGE_KEY = 'firstoption_solar_sales_v1';
 const LOCAL_BATCHES_KEY = 'firstoption_solar_batches_v1';
 
-// Local storage storage helper for offline/demo operation
+// Local storage helpers.
+// Existing local records are preserved unless an explicit function changes them.
 export function getLocalSales(): SaleRecord[] {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
+
     if (!raw) {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(INITIAL_SALES_DATA));
+      localStorage.setItem(
+        LOCAL_STORAGE_KEY,
+        JSON.stringify(INITIAL_SALES_DATA)
+      );
       return INITIAL_SALES_DATA;
     }
+
     return JSON.parse(raw);
   } catch (err) {
     console.error('Failed to read local sales storage:', err);
@@ -43,14 +50,18 @@ export function saveLocalSales(records: SaleRecord[]): void {
 }
 
 export function resetLocalSalesToDefault(): void {
-  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(INITIAL_SALES_DATA));
+  localStorage.setItem(
+    LOCAL_STORAGE_KEY,
+    JSON.stringify(INITIAL_SALES_DATA)
+  );
 }
 
 export function clearAllLocalSales(): void {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify([]));
 }
 
-// Unified Service layer
+// Load shared sales from Supabase when configured.
+// Do not silently substitute browser-local records if the database request fails.
 export async function getAllSales(): Promise<SaleRecord[]> {
   if (isSupabaseConfigured && supabase) {
     const { data, error } = await supabase
@@ -59,16 +70,21 @@ export async function getAllSales(): Promise<SaleRecord[]> {
       .order('date', { ascending: false });
 
     if (error) {
-      console.warn('Supabase fetch error, falling back to local dataset:', error.message);
-      return getLocalSales();
+      console.error('Supabase sales fetch failed:', error.message);
+      throw new Error(
+        `Could not load shared sales data: ${error.message}`
+      );
     }
+
     return (data as SaleRecord[]) || [];
   }
 
   return getLocalSales();
 }
 
-export async function addSale(record: Omit<SaleRecord, 'id'>): Promise<SaleRecord> {
+export async function addSale(
+  record: Omit<SaleRecord, 'id'>
+): Promise<SaleRecord> {
   if (isSupabaseConfigured && supabase) {
     const { data, error } = await supabase
       .from('sales_transactions')
@@ -81,17 +97,26 @@ export async function addSale(record: Omit<SaleRecord, 'id'>): Promise<SaleRecor
   }
 
   const current = getLocalSales();
-  const newId = current.length > 0 ? Math.max(...current.map((r) => Number(r.id) || 0)) + 1 : 1;
+
+  const newId =
+    current.length > 0
+      ? Math.max(...current.map((r) => Number(r.id) || 0)) + 1
+      : 1;
+
   const newRec: SaleRecord = {
     ...record,
     id: newId,
     created_at: new Date().toISOString(),
   };
+
   saveLocalSales([newRec, ...current]);
   return newRec;
 }
 
-export async function updateSale(id: string | number, updates: Partial<SaleRecord>): Promise<SaleRecord> {
+export async function updateSale(
+  id: string | number,
+  updates: Partial<SaleRecord>
+): Promise<SaleRecord> {
   if (isSupabaseConfigured && supabase) {
     const { data, error } = await supabase
       .from('sales_transactions')
@@ -106,23 +131,41 @@ export async function updateSale(id: string | number, updates: Partial<SaleRecor
 
   const current = getLocalSales();
   const idx = current.findIndex((r) => String(r.id) === String(id));
-  if (idx === -1) throw new Error(`Sale with ID ${id} not found.`);
 
-  const updatedRec = { ...current[idx], ...updates, updated_at: new Date().toISOString() };
+  if (idx === -1) {
+    throw new Error(`Sale with ID ${id} not found.`);
+  }
+
+  const updatedRec = {
+    ...current[idx],
+    ...updates,
+    updated_at: new Date().toISOString(),
+  };
+
   current[idx] = updatedRec;
   saveLocalSales(current);
+
   return updatedRec;
 }
 
-export async function deleteSale(id: string | number): Promise<void> {
+export async function deleteSale(
+  id: string | number
+): Promise<void> {
   if (isSupabaseConfigured && supabase) {
-    const { error } = await supabase.from('sales_transactions').delete().eq('id', id);
+    const { error } = await supabase
+      .from('sales_transactions')
+      .delete()
+      .eq('id', id);
+
     if (error) throw new Error(error.message);
     return;
   }
 
   const current = getLocalSales();
-  const filtered = current.filter((r) => String(r.id) !== String(id));
+  const filtered = current.filter(
+    (r) => String(r.id) !== String(id)
+  );
+
   saveLocalSales(filtered);
 }
 
@@ -131,8 +174,8 @@ export async function bulkInsertSales(
   filename: string
 ): Promise<{ inserted: number }> {
   if (isSupabaseConfigured && supabase) {
-    // 1. Create batch record
-    const { data: batchData } = await supabase
+    // 1. Create the import batch first.
+    const { data: batchData, error: batchError } = await supabase
       .from('import_batches')
       .insert([
         {
@@ -144,22 +187,40 @@ export async function bulkInsertSales(
       .select()
       .single();
 
-    const batchId = batchData?.id;
+    if (batchError || !batchData) {
+      throw new Error(
+        `Could not create import record: ${
+          batchError?.message || 'No batch record returned'
+        }`
+      );
+    }
 
-    // 2. Insert records with batch_id
+    // 2. Insert sales rows linked to the batch.
     const payload = records.map((r) => ({
       ...r,
-      batch_id: batchId,
+      batch_id: batchData.id,
     }));
 
-    const { error } = await supabase.from('sales_transactions').insert(payload);
-    if (error) throw new Error(error.message);
+    const { error: salesError } = await supabase
+      .from('sales_transactions')
+      .insert(payload);
+
+    if (salesError) {
+      throw new Error(
+        `Import batch was created, but sales insertion failed: ${salesError.message}`
+      );
+    }
 
     return { inserted: records.length };
   }
 
+  // Local-only fallback when Supabase is not configured.
   const current = getLocalSales();
-  let nextId = current.length > 0 ? Math.max(...current.map((r) => Number(r.id) || 0)) + 1 : 1;
+
+  let nextId =
+    current.length > 0
+      ? Math.max(...current.map((r) => Number(r.id) || 0)) + 1
+      : 1;
 
   const newRecords: SaleRecord[] = records.map((r) => ({
     id: nextId++,
@@ -175,24 +236,33 @@ export async function bulkInsertSales(
     quantity: Number(r.quantity) || 1,
     rate: Number(r.rate) || 0,
     remark: r.remark || '',
-    total: Number(r.total) || (Number(r.quantity) || 1) * (Number(r.rate) || 0),
+    total:
+      Number(r.total) ||
+      (Number(r.quantity) || 1) * (Number(r.rate) || 0),
     created_at: new Date().toISOString(),
   }));
 
   saveLocalSales([...newRecords, ...current]);
 
-  // Store batch metadata in local storage
+  // Preserve the existing local import-history mechanism.
   try {
-    const existingBatches = JSON.parse(localStorage.getItem(LOCAL_BATCHES_KEY) || '[]');
+    const existingBatches = JSON.parse(
+      localStorage.getItem(LOCAL_BATCHES_KEY) || '[]'
+    );
+
     existingBatches.unshift({
       id: `local-batch-${Date.now()}`,
       filename,
       imported_count: newRecords.length,
       created_at: new Date().toISOString(),
     });
-    localStorage.setItem(LOCAL_BATCHES_KEY, JSON.stringify(existingBatches));
-  } catch (e) {
-    console.error('Failed to save batch log:', e);
+
+    localStorage.setItem(
+      LOCAL_BATCHES_KEY,
+      JSON.stringify(existingBatches)
+    );
+  } catch (err) {
+    console.error('Failed to save batch log:', err);
   }
 
   return { inserted: newRecords.length };
